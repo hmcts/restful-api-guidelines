@@ -6,7 +6,7 @@ set -ex
 pushd `dirname $0` > /dev/null
 SCRIPT_DIR=`pwd -P`
 popd > /dev/null
-BUILD_DIR=${SCRIPT_DIR}/output
+BUILD_DIR=${SCRIPT_DIR}/docs
 
 rm -rf ${BUILD_DIR}
 mkdir ${BUILD_DIR}
