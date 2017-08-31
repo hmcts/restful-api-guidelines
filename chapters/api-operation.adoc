@@ -4,6 +4,9 @@
 [#192]
 == {MUST} Provide Online Access to OpenAPI Reference Definition
 
+NOTE: This section is subject to change pending a decision on documentation
+standards.
+
 All service applications must support access to the OpenAPI Reference
 Definitions of their external APIs — it is optional for internal APIs —
 via the following two API endpoints:

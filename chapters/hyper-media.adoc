@@ -21,12 +21,14 @@ proper link relationships in your APIs as stated in rules below.
 [#163]
 == {MAY} Use REST Maturity Level 3 - HATEOAS
 
+NOTE: This standard is expected to change, pending discussion.
+
 We do not generally recommend to implement
 http://martinfowler.com/articles/richardsonMaturityModel.html#level3[REST
 Maturity Level 3]. HATEOAS comes with additional API complexity without
-real value in our SOA context where client and server interact via REST
-APIs and provide complex business functions as part of our e-commerce
-SaaS platform.
+real value in our context where client and server interact via REST
+APIs and provide complex business functions as part of our common Reform
+platform.
 
 Our major concerns regarding the promised advantages of HATEOAS (see
 also

@@ -1,14 +1,12 @@
 [[principles]]
 = Principles
 
-[[api-as-a-product]]
-== API as a Product
+[[api-strategy-alignment]]
+== API Strategy Alignment
 
-As mentioned above, Zalando is transforming from an online shop into an
-expansive fashion platform comprising a rich set of products following a
-Software as a Platform (SaaP) model for our business partners. As a
-company we want to deliver products to our (internal and external)
-customers which can be consumed like a service.
+As part of our API Strategy, we encourage product and platform thinking.
+This should be expressed in the delivery of APIs as parts of a coherent
+platform.
 
 Platform products provide their functionality via (public) APIs; hence,
 the design of our APIs should be based on the API as a Product
@@ -20,20 +18,17 @@ improvement
 * Emphasize easy understanding, discovery and usage of APIs; design APIs
 irresistible for client engineers
 * Actively improve and maintain API consistency over the long term
-* Make use of customer feedback and provide service level support
+* Make use of user feedback and provide service level support
 
 RESTful API as a Product makes the difference between enterprise
-integration business and agile, innovative product service business
-built on a platform of APIs.
+integration business and agile, innovative product services built on
+a platform of APIs.
 
-Based on your concrete customer use cases, you should carefully check
+Based on your concrete use cases, you should carefully check
 the trade-offs of API design variants and avoid short-term server side
 implementation optimizations at the expense of unnecessary client side
 obligations and have a high attention on API quality and client
 developer experience.
-
-API as a Product is closely related to our <<100,API First principle>>
-(see next chapter) which is more focused on how we engineer high quality APIs.
 
 [[api-design-principles]]
 == API Design Principles
@@ -44,9 +39,9 @@ and specialized. In contrast, REST is centered around business (data)
 entities exposed as resources that are identified via URIs and can be
 manipulated via standardized CRUD-like methods using different
 representations, self-descriptive messages and hypermedia. RESTful APIs
-tend to be less use-case specific and comes with less rigid client /
-server coupling and are more suitable as a platform interface being open
-for diverse client applications.
+tend to be less use-case specific and comes with less rigid client/server
+coupling and are more suitable as a platform interface being open for
+diverse client applications.
 
 * We prefer REST-based APIs with JSON payloads
 * We prefer systems to be truly RESTful
@@ -55,14 +50,14 @@ HATEOAS (maturity level 3). Our guidelines do not strongly advocate for
 full REST compliance, but limited hypermedia usage, e.g. for pagination
 (see <<hypermedia>>).
 However, we still use the term "RESTful API", due to the absence
-of an alternative established term and to keep it like the very majority
-of web service industry that also use the term for their REST
+of an alternative established term and to keep it like the majority
+of the web service industry that also use the term for their REST
 approximations — in fact, in today's industry full HATEOAS compliant
 APIs are a very rare exception.]
 
-We apply the RESTful web service principles to all kind of application
-components, whether they provide functionality via the Internet or via
-the intranet as larger application elements. We strive to build
+We apply the RESTful service principles to all kinds of application
+components, whether they provide functionality via the public nternet or
+via internal networks as larger application elements. We strive to build
 interoperating distributed systems that different teams can evolve in
 parallel.
 
@@ -72,7 +67,7 @@ Robustness Principle] (RFC 1122):
 
 * Be liberal in what you accept, be conservative in what you send
 
-_Readings:_ Read the following to gain additional insight on the RESTful
+*Reading:* Read the following to gain additional insight on the RESTful
 service architecture paradigm and general RESTful API design style:
 
 * Book:

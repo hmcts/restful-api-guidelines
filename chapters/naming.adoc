@@ -70,6 +70,9 @@ base path. If the service should also support non-public, internal APIs
 — for specific operational support functions, for example — add “/api”
 as base path to clearly separate public and non-public API resources.
 
+This is not expected to be a common scenario, and by default, APIs should
+not include "/api" without discussion.
+
 [#136]
 == {MUST} Avoid Trailing Slashes
 
