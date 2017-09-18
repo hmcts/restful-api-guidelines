@@ -40,7 +40,7 @@ http://tools.ietf.org/html/rfc7231#section-5.3.4[RFC 7231 Section
 Content-Encoding header.
 
 [#157]
-== {SHOULD} Support Filtering of Resource Fields
+== {MAY} Support Filtering of Resource Fields
 
 Depending on your use case and payload size, you can significantly
 reduce network bandwidth need by supporting filtering of returned entity

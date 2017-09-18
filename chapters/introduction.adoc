@@ -1,20 +1,31 @@
 [[introduction]]
 = Introduction
 
-Zalando’s software architecture centers around decoupled microservices
-that provide functionality via RESTful APIs with a JSON payload. Small
-engineering teams own, deploy and operate these microservices in their
-AWS (team) accounts. Our APIs most purely express what our systems do,
-and are therefore highly valuable business assets. Designing
-high-quality, long-lasting APIs has become even more critical for us
-since we started developing our new open platform strategy, which
-transforms Zalando from an online shop into an expansive fashion
-platform. Our strategy emphasizes developing lots of public APIs for our
-external business partners to use via third-party applications.
+== Provenance
+
+RESTful API Standards/Guidelines are found in organisations of all sizes
+and kinds. Writing a set from scratch when many are openly published makes
+little sense, and so the HMCTS Reform Programme has opted to adopt and
+adapt the RESTful API Guidelines developed and published by Zalando.
+
+These are not 100% appropriate to our needs, but form a very usable base,
+and so have been forked and modified to better reflect the needs of the
+HMCTS Reform Programme. The original work and content creation by the
+contributors to the Zalando Guidelines is gratefully acknowledged, and it
+is expected that useful additions where relevant may be contributed back.
+
+== Overview
+
+The HMCTS software architecture vision centers around decoupled microservices
+that provide functionality via RESTful APIs with a JSON payload. Our APIs most
+purely express what our systems do, and are therefore highly valuable
+assets. Designing high-quality, long-lasting APIs is important to the
+Reform Programme, making the systems we build more maintainable and more
+effectively usable to build new and transformative systems.
 
 With this in mind, we’ve adopted “API First” as one of our key
-engineering principles. Microservices development begins with API
-definition outside the code and ideally involves ample peer-review
+architectural and engineering principles. Microservices development begins
+with API definition outside the code and ideally involves ample peer-review
 feedback to achieve high-quality APIs. API First encompasses a set of
 quality-related standards and fosters a peer review culture including a
 lightweight review procedure. We encourage our teams to follow them to
@@ -27,7 +38,7 @@ ensure that our APIs:
 * follow a consistent RESTful style and syntax
 * are consistent with other teams’ APIs and our global architecture
 
-Ideally, all Zalando APIs will look like the same author created them.
+Ideally, all HMCTS Reform APIs will look like the same author created them.
 
 [[conventions-used-in-these-guidelines]]
 == Conventions Used in These Guidelines
@@ -38,15 +49,13 @@ The requirement level keywords "MUST", "MUST NOT", "REQUIRED", "SHALL",
 interpreted as described in https://www.ietf.org/rfc/rfc2119.txt[RFC
 2119].
 
-[[zalando-specific-information]]
-== Zalando specific information
+[[team-information]]
+== Team Information
 
-The purpose of our “RESTful API guidelines” is to define standards to
-successfully establish “consistent API look and feel” quality. The
-https://techwiki.zalando.net/display/GUL/API+Guild[API Guild [internal
-link]] drafted and owns this document. Teams are responsible to fulfill
-these guidelines during API development and are encouraged to contribute
-to guideline evolution via pull requests.
+The purpose of our RESTful API Standards is to define standards to
+successfully establish “consistent API look and feel” quality. Teams are
+responsible for meeting these standards during API development and are
+encouraged to contribute to guideline evolution via pull requests.
 
 These guidelines will, to some extent, remain work in progress as our
 work evolves, but teams can confidently follow and trust them.

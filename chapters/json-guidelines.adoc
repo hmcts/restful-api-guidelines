@@ -15,6 +15,8 @@ idiomatic form across teams and services.
 [#118]
 == {MUST} Property names must be snake_case (and never camelCase)
 
+NOTE: This standard is open to question, opinions are welcomed.
+
 No established industry standard exists, but many popular Internet
 companies prefer snake_case: e.g. GitHub, Stack Exchange, Twitter.
 Others, like Google and Amazon, use both - but not only camelCase. It’s
@@ -121,7 +123,7 @@ contains a grammar] for durations).
 == {MAY} Standards could be used for Language, Country and Currency
 
 * http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2[ISO 3166-1-alpha2 country]
-* (It's "GB", not "UK", even though "UK" has seen some use at Zalando)
+* (It's "GB", not "UK")
 * https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[ISO 639-1 language code]
 * https://tools.ietf.org/html/bcp47[BCP-47] (based on ISO 639-1) for language variants
 * http://en.wikipedia.org/wiki/ISO_4217[ISO 4217 currency codes]

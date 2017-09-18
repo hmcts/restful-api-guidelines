@@ -1,6 +1,9 @@
 [[security]]
 = Security
 
+NOTE: Security standards relating to APIs are considered DRAFT, and are likely
+to change.
+
 [#104]
 == {MUST} Secure Endpoints with OAuth 2.0
 

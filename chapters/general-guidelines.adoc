@@ -7,9 +7,8 @@ The titles are marked with the corresponding labels: {MUST},
 [#100]
 == {MUST} Follow API First Principle
 
-As mentioned in the introduction, API First is one of our
-https://github.com/zalando-incubator/zalando-tech-principles[engineering
-and architecture principles]. In a nutshell API First requires two
+As mentioned in the introduction, API First is one of our architectural
+and engineering principles. In a nutshell API First requires two
 aspects:
 
 * define APIs outside the code first using a standard specification
@@ -36,17 +35,15 @@ of a contract between service provider and client users
 * infrastructure tooling for API discovery, API GUIs, API documents,
 automated quality checks
 
-An element of API First are also this API Guidelines and a
-https://github.bus.zalan.do/ApiGuild/ApiReviewProcedure[lightweight API
-review process [internal link]] as to get early review feedback from
-peers and client developers. Peer review is important for us to get high
-quality APIs, to enable architectural and design alignment and to
-supported development of client applications decoupled from service
-provider engineering life cycle.
+Applying API First design requires following the guidance in this standard,
+and validating it with early and consistent peer review. Peer review is
+important for us to get high quality APIs, to enable architectural and
+design alignment and to supported development of client applications
+decoupled from service provider engineering life cycle.
 
-It is important to learn, that API First is *not in conflict with the
-agile development principles* that we love. Service applications should
-evolve incrementally — and so its APIs. Of course, our API specification
+It is important to learn that API First is *not in conflict with the
+agile development principles* that we follow. Service applications should
+evolve incrementally — and so too should APIs. Of course, our API specification
 will and should evolve iteratively in different cycles; however, each
 starting with draft status and _early_ team and peer review feedback.
 API may change and profit from implementation concerns and automated
@@ -65,39 +62,23 @@ quality (including API Guideline compliance), already confirmed via team
 internal reviews.
 
 [#101]
-== {MUST} Provide API Reference Definition using OpenAPI
+== {MUST} Provide API Reference Definition
 
-We use the http://swagger.io/specification/[OpenAPI specification] (aka
-Swagger spec) as standard for our REST API definitions. You *have to
-provide the API definition in YAML format* (instead of JSON) for the
-OpenAPI API definition files due to its improved readability.
+Using the standard (to be defined at a programme level) for API documentation,
+APIs must be fully documented (including meaning and commentary, not solely
+specification and conformity).
 
-Please stick to version 2.0 of the specification for now, until we
-succeed to update all our tooling to support the upcoming version 3.0.
-
-We also call the OpenAPI API definition the "API Reference definition"
-(or "API definition"); as a reference manual it provides all information
-needed by an experienced API client developer to use this API.
-
-The OpenAPI API specification file should be subject of version control
-together with source code management. Services also have to support an
-<<191,endpoint to access the API Reference definition>> for their external API(s).
-
-Furthermore you should make use of
-https://github.com/zalando-incubator/zally[Zally], our own API linter
-which supports you in designing a guideline compliant API. You find more
-information in the Github repository itself and in
-https://pages.github.bus.zalan.do/ApiGuild/ApiReviewProcedure/[API
-review procedures [internal link]].
+The specification of an API in this way will be referred to as the API
+Reference Definition.
 
 [#102]
 == {SHOULD} Provide User Manual Documentation
 
-In addition to the API as OpenAPI Reference Definition, it’s good
-practice to provide an API User Manual documentation to improve client
-developer experience, especially of engineers that are less experienced
-in using this API. A helpful API User Manual typically describes the
-following API aspects:
+In addition to the API as Reference Definition, it’s good practice to
+provide an API User Manual documentation to improve client developer
+experience, especially of engineers that are less experienced in using this
+API. A helpful API User Manual typically describes the following API
+aspects:
 
 * API’s scope, purpose and use cases
 * concrete examples of API usage
@@ -105,10 +86,8 @@ following API aspects:
 * architecture context and major dependencies - including figures and
 sequence flows
 
-The User Manual must be posted online, e.g. via GitHub Enterprise pages,
-on specific team web servers, or as a Google doc. And don't forget to
-include a link to this user manual into your OpenAPI definition using
-the “externalDocs” property.
+The User Manual must be posted online, using the standard API documentation
+hosting approach (to be defined at a programme level).
 
 [#103]
-== {MUST} Write APIs in U.S. English
+== {MUST} Write APIs in U.K. English

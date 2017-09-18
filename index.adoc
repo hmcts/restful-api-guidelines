@@ -7,21 +7,17 @@
 :sectnums:
 :sectnumlevels: 1
 
-:creator: Zalando SE
+:creator: HMCTS, Zalando SE
 :producer: Asciidoctor
-:keywords: Zalando, Guidelines, RESTful, API, Events, Schema
+:keywords: HMCTS, Zalando, Guidelines, RESTful, API, Events, Schema
 :copyright: CC-BY-SA 3.0
 
 :MUST: pass:[<span class="must-keyword"><strong>Must:</strong></span>]
 :SHOULD: pass:[<span class="should-keyword"><strong>Should:</strong></span>]
 :MAY: pass:[<span class="may-keyword"><strong>May:</strong></span>]
 
-= Zalando RESTful API and Event Scheme Guidelines
-Zalando SE
-
-image::assets/api-zalando-small.jpg[API Guild Logo]
-
-Other formats: link:zalando-guidelines.pdf[PDF], link:zalando-guidelines.epub[EPUB3]
+= HMCTS Reform Programme RESTful API Standards
+HMCTS
 
 pass:[<div id="table-of-contents"></div>]
 
@@ -42,10 +38,9 @@ include::chapters/hyper-media.adoc[]
 include::chapters/data-formats.adoc[]
 include::chapters/common-data-types.adoc[]
 include::chapters/common-headers.adoc[]
-include::chapters/proprietary-headers.adoc[]
 include::chapters/deprecation.adoc[]
 include::chapters/api-operation.adoc[]
-include::chapters/events.adoc[]
+// include::chapters/events.adoc[]
 include::chapters/references.adoc[]
 include::chapters/tooling.adoc[]
 include::chapters/changelog.adoc[]
