@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.5">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
 <meta name="keywords" content="HMCTS, Zalando, Guidelines, RESTful, API, Events, Schema">
-<meta name="author" content="HMCTS">
 <meta name="copyright" content="CC-BY-SA 3.0">
 <title>HMCTS Reform Programme RESTful API Standards</title>
 <style>
@@ -1349,20 +1348,21 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article">
 <div id="header">
-<h1>HMCTS Reform Programme RESTful API Standards</h1>
-<div class="details">
-<span id="author" class="author">HMCTS</span><br>
-</div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_hmcts_reform_programme_restful_api_standards"><a class="link" href="#_hmcts_reform_programme_restful_api_standards">HMCTS Reform Programme RESTful API Standards</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>HMCTS</p>
+</div>
 <div class="paragraph">
 <p><div id="table-of-contents"></div></p>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
+<li><a href="#_hmcts_reform_programme_restful_api_standards">HMCTS Reform Programme RESTful API Standards</a></li>
 <li><a href="#introduction">1. Introduction</a>
 <ul class="sectlevel2">
 <li><a href="#_provenance">Provenance</a></li>
@@ -2457,7 +2457,7 @@ changes.</p>
 <div class="paragraph">
 <p>Media type versioning: Here, version information and media type are
 provided together via the HTTP Content-Type header — e.g.
-application/x.zalando.cart+json;version=2. For incompatible changes, a
+application/vnd.uk.gov.hmcts.idam.user.v2+json. For incompatible changes, a
 new media type version for the resource is created. To generate the new
 representation version, consumer and producer can do content negotiation
 using the HTTP Content-Type and Accept headers. Note: This versioning
@@ -2469,7 +2469,7 @@ method semantics.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="http">Accept: application/x.zalando.cart+json;version=2</code></pre>
+<pre class="CodeRay highlight"><code data-lang="http">Accept: application/vnd.uk.gov.hmcts.idam.user.v2+json</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2479,7 +2479,7 @@ sending the new version:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="http">Content-Type: application/x.zalando.cart+json;version=2</code></pre>
+<pre class="CodeRay highlight"><code data-lang="http">Content-Type: application/vnd.uk.gov.hmcts.idam.user.v2+json</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5684,7 +5684,7 @@ header.prepend(nav);
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-08-31 08:17:48 UTC
+Last updated 2017-11-16 09:49:01 UTC
 </div>
 </div>
 </body>
