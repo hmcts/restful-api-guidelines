@@ -4,7 +4,6 @@
 :toclevels: 2
 :leveloffset: +1
 :sectlinks:
-:sectnums:
 :sectnumlevels: 1
 
 :creator: HMCTS, Zalando SE
@@ -22,6 +21,8 @@ HMCTS
 pass:[<div id="table-of-contents"></div>]
 
 toc::[]
+
+:sectnums:
 
 include::chapters/introduction.adoc[]
 include::chapters/design-principles.adoc[]
