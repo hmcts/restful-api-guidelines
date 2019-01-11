@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.6.1">
+<meta name="generator" content="Asciidoctor 1.5.8">
 <meta name="keywords" content="HMCTS, Zalando, Guidelines, RESTful, API, Events, Schema">
 <meta name="copyright" content="CC-BY-SA 3.0">
 <title>HMCTS Reform Programme RESTful API Standards</title>
@@ -1728,7 +1728,7 @@ diverse client applications.</p>
 </li>
 <li>
 <p>We prefer systems to be truly RESTful
-<sup class="footnote" id="_footnote_fielding-restful">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup></p>
+<sup class="footnote" id="_footnote_fielding-restful">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
 </li>
 </ul>
 </div>
@@ -2018,7 +2018,7 @@ resource specific scopes may make sense.</p>
 <div class="paragraph">
 <p>Some examples for standard and resource-specific scopes:</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 20%;">
@@ -3472,7 +3472,7 @@ the same status code)</p>
 <div class="paragraph">
 <p>Method implementations must fulfill the following basic properties:</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -3567,7 +3567,7 @@ by specific web servers like Nginx.</p>
 </div>
 <div class="sect3">
 <h4 id="success-codes"><a class="link" href="#success-codes">Success Codes</a></h4>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
 <col style="width: 70%;">
@@ -3617,7 +3617,7 @@ informations for different parts of a batch/bulk request. See
 </div>
 <div class="sect3">
 <h4 id="redirection-codes"><a class="link" href="#redirection-codes">Redirection Codes</a></h4>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
 <col style="width: 70%;">
@@ -3654,7 +3654,7 @@ version passed via request headers If-Modified-Since or If-None-Match.</p></td>
 </div>
 <div class="sect3">
 <h4 id="client-side-error-codes"><a class="link" href="#client-side-error-codes">Client Side Error Codes</a></h4>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
 <col style="width: 70%;">
@@ -3755,7 +3755,7 @@ sent too many requests. See <a href="#152"><span class="must-keyword"><strong>Mu
 </div>
 <div class="sect3">
 <h4 id="server-side-error-codes"><a class="link" href="#server-side-error-codes">Server Side Error Codes:</a></h4>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
 <col style="width: 70%;">
@@ -3992,7 +3992,7 @@ specify the format of the query parameter.</p>
 <p>Only the <code>csv</code> or <code>multi</code> formats should be used for multi-value query
 parameters as described below.</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 15%;">
 <col style="width: 25%;">
@@ -4238,7 +4238,7 @@ lists that are (potentially) larger than just a few hundred entries.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://developer.infoconnect.com/paging-results-limit-and-offset">Offset/Limit-based
+<p><a href="https://developer.infoconnect.com/paging-results">Offset/Limit-based
 pagination</a>: numeric offset identifies the first page entry</p>
 </li>
 <li>
@@ -4710,7 +4710,7 @@ precision must be defined by the format as follows to prevent clients
 from guessing the precision incorrectly, and thereby changing the value
 unintentionally:</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 15%;">
 <col style="width: 15%;">
@@ -5678,13 +5678,13 @@ header.prepend(nav);
 </div>
 <div id="footnotes">
 <hr>
-<div class="footnote" id="_footnote_1">
+<div class="footnote" id="_footnotedef_1">
 <a href="#_footnoteref_1">1</a>. Per definition of R.Fielding REST APIs have to support HATEOAS (maturity level 3). Our guidelines do not strongly advocate for full REST compliance, but limited hypermedia usage, e.g. for pagination (see <a href="#hypermedia">Hypermedia</a>). However, we still use the term "RESTful API", due to the absence of an alternative established term and to keep it like the majority of the web service industry that also use the term for their REST approximations — in fact, in today&#8217;s industry full HATEOAS compliant APIs are a very rare exception.
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-11-16 09:49:01 UTC
+Last updated 2019-01-11 15:32:50 UTC
 </div>
 </div>
 </body>
