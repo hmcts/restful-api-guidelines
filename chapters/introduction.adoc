@@ -23,7 +23,7 @@ assets. Designing high-quality, long-lasting APIs is important to the
 Reform Programme, making the systems we build more maintainable and more
 effectively usable to build new and transformative systems.
 
-With this in mind, we’ve adopted “API First” as one of our key
+With this in mind, we’ve adopted "API First" as one of our key
 architectural and engineering principles. Microservices development begins
 with API definition outside the code and ideally involves ample peer-review
 feedback to achieve high-quality APIs. API First encompasses a set of
@@ -70,3 +70,4 @@ outdated rules
 Furthermore you should keep in mind that once an API becomes public
 externally available, it has to be re-reviewed and changed according to
 current guidelines - for sake of overall consistency.
+
