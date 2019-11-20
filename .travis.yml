@@ -13,8 +13,6 @@ script:
   - cp -r models/* output/
   - cp -r -n legacy/* output/
   - ./generate_rules_json.sh output
-  - mv output/index.pdf output/zalando-guidelines.pdf
-  - mv output/index.epub output/zalando-guidelines.epub
 
 after_error:
   - docker logs asciidoc-to-html
