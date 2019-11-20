@@ -88,10 +88,7 @@ Styles and the Design of Network-Based Software Architectures]
 [[api-as-a-product]]
 == API as a Product
 
-As mentioned above, Zalando is transforming from an online shop into an
-expansive fashion platform comprising a rich set of products following a
-Software as a Platform (SaaP) model for our business partners. As a
-company we want to deliver products to our (internal and external)
+As an organisation, HMCTS want to deliver products to our (internal and external)
 customers which can be consumed like a service.
 
 Platform products provide their functionality via (public) APIs; hence,
@@ -114,7 +111,7 @@ business built on a platform of APIs and ordinary enterprise integration busines
 where APIs are provided as "appendix" of existing products to support system integration
 and optimised for local server-side realization.
 
-Understand the concrete use cases of your customers and carefully check
+Understand the concrete use cases of your users and carefully check
 the trade-offs of your API design variants with a product mindset. Avoid short-term
 implementation optimizations at the expense of unnecessary client side
 obligations, and have a high attention on API quality and client

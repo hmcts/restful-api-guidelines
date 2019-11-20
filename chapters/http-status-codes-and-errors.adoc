@@ -31,7 +31,7 @@ responses:
     content:
       "application/problem+json":
         schema:
-          $ref: 'https://opensource.zalando.com/problem/schema.yaml#/Problem'
+          $ref: 'https://hmcts.github.io/problem/schema.yaml#/Problem'
 ----
 
 API designers should also think about a **troubleshooting board** as part of
@@ -303,7 +303,7 @@ give more details than the status code itself can supply, whether it be caused
 by the client or the server (i.e. both for {4xx} or {5xx} error codes).
 
 The Open API schema definition of the Problem JSON object can be found
-https://zalando.github.io/problem/schema.yaml[on github]. You can
+https://hmcts.github.io/problem/schema.yaml[on github]. You can
 reference it by using:
 
 [source,yaml]
@@ -314,7 +314,7 @@ responses:
     content:
       "application/problem+json":
         schema:
-          $ref: 'https://opensource.zalando.com/problem/schema.yaml#/Problem'
+          $ref: 'https://hmcts.github.io/problem/schema.yaml#/Problem'
 ----
 
 You may define custom problem types as extension of the Problem JSON object 
