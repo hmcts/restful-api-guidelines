@@ -72,7 +72,7 @@ tree_node:
 ----
 
 These properties are not always strictly necessary, but making them idiomatic
-allows API client developers to build up a common understanding of Zalando's
+allows API client developers to build up a common understanding of HMCTS's
 resources. There is very little utility for API consumers in having different
 names or value types for these fields across APIs.
 
@@ -182,7 +182,7 @@ APIs may define custom problems types with extension properties,
 according to their specific needs.
 
 The Open API schema definition can be found
-https://zalando.github.io/problem/schema.yaml[on github]. You can
+https://hmcts.github.io/problem/schema.yaml[on github]. You can
 reference it by using:
 
 [source,yaml]
@@ -191,7 +191,7 @@ responses:
   503:
     description: Service Unavailable
     schema:
-      $ref: 'https://zalando.github.io/problem/schema.yaml#/Problem'
+      $ref: 'https://hmcts.github.io/problem/schema.yaml#/Problem'
 ----
 
 [#176]

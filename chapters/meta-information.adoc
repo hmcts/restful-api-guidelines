@@ -123,11 +123,10 @@ groups with clear organisational and legal boundaries:
   specific product portfolio owned by the same business unit.
 *company-internal*::
   The API consumers with this audience are restricted to applications owned
-  by the business units of the same the company (e.g. Zalando company with
-  Zalando SE, Zalando Payments SE & Co. KG. etc.)
+  by the business units of the same the company (e.g. HMCTS organisation)
 *external-partner*::
   The API consumers with this audience are restricted to applications of
-  business partners of the company owning the API and the company itself.
+  business partners of the organisation owning the API and the organisation itself.
 *external-public*::
   APIs with this audience can be accessed by anyone with Internet access.
 
