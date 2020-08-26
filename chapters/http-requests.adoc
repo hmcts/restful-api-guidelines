@@ -339,6 +339,12 @@ to avoid {200} here unless you make sure, that the delivered resource is the
 original one implementing a well defined behavior. Using {204} without content
 would be a similar well defined option.
 
+[#221]
+== {MUST} Not transmit personal data in URLs
+
+https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/what-is-personal-data/[Personal data] must not be transmitted in URLs (as part of the path or query string) because this information can be inadvertently exposed via client, network and server logs and other mechanisms.
+
+Consequently services should accept personal data transmitted in HTTP headers.
 [#154]
 == {MUST} Define Collection Format of Header and Query Parameters
 
