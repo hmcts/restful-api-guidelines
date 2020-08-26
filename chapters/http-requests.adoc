@@ -344,7 +344,7 @@ would be a similar well defined option.
 
 https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/what-is-personal-data/[Personal data] must not be transmitted in URLs (as part of the path or query string) because this information can be inadvertently exposed via client, network and server logs and other mechanisms.
 
-Consequently services should accept personal data transmitted in HTTP headers.
+Consequently services should accept personal data transmitted in the HTTP body or HTTP headers.
 [#154]
 == {MUST} Define Collection Format of Header and Query Parameters
 
